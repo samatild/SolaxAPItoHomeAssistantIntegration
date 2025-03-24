@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  solax-monitor:
+    image: samuelmatildes/solax-local-api:latest
+    container_name: solax-monitor
+    restart: unless-stopped
+    environment:
+      - TOKEN_ID=${TOKEN_ID}
+      - SERIAL_NUMBER=${SERIAL_NUMBER}
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./data:/var/www/solax
+      - ./logs:/var/log
