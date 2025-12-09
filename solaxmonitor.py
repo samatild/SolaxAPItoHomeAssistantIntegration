@@ -17,7 +17,7 @@ if not token_id or not sn:
 # Max API calls according to Solax API docs
 # https://www.eu.solaxcloud.com/phoebus/resource/files/userGuide/Solax_API.pdf
 url = (
-    f"https://www.solaxcloud.com/proxyApp/proxy/api/getRealtimeInfo.do"
+    f"https://www.eu.solaxcloud.com:9443/proxy/api/getRealtimeInfo.do"
     f"?tokenId={token_id}&sn={sn}"
 )
 max_calls_per_day = 10000
