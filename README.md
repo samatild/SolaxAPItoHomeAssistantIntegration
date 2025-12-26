@@ -1,5 +1,7 @@
 # Solax Monitor Docker Container
 
+#### -- requires webserver to publish JSON output. not included in the image ; work in progress --
+
 I have created this repository to share with the community the way that I managed to get the data from my Solax inverter to Home Assistant. Tough is a bit tricky to get the data from the Solax API, I have created a Docker container that will poll the API and store the data locally. This way you can pull the data from local API in Home Assistant without the rate limits of the Solax API as we create a backoff mechanism to avoid hitting the API too often.
 
 # Table of Contents
